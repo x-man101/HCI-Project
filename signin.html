@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" >     <title>CC Order Sign In</title>     
+	<link rel="stylesheet" href="signin.css">
+</head>   
+<body> 	
+	<img name="WPI" id="WPI" src="logo.png">
+	<header>Campus Center Orders<br></header>
+
+	<form action="home.html" method="post">
+  		<div class="container">
+  	 		 <label for="uname"><b>Username</b></label>
+    		<input type="text" placeholder="Enter Username" name="uname" required onblur="checkEmail(this.value)">
+
+    		<label for="psw"><b>Password</b></label>
+    		<input type="password" placeholder="Enter Password" name="psw" required>
+
+    		<button type="submit">Login</button>
+    		<label>
+      			<input type="checkbox" checked="checked" name="remember"> Remember me
+    		</label>
+  		</div>
+
+  		<div class="container" style="background-color:#f1f1f1">
+    		<button type="button" class="cancelbtn">Cancel</button>
+    		<span class="psw"><a href="password.html">Forgot password?</a></span>
+  		</div>
+	</form>
+	<img name="gompei" id="gompei" src="gompei.png">
+</body> 
+<script>
+function checkEmail(value)
+{
+      if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@wpi\.edu+(?:\.[a-zA-Z0-9-]+)*$/.test(value))
+  {
+    return (true)
+  }
+    alert("Please enter a valid WPI email address!")
+    return (false)
+}
+function checkPassword(value)
+{
+	if(value.trim()=="password")
+	{
+		return (true)
+	}
+		alert("The password you entered is incorrect!")
+		return (false)
+
+}
+</script>
+</html>

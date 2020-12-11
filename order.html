@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script src="order.js" async></script> 	
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" >  
+	<link rel="stylesheet" href="forms.css">
+	<link rel="stylesheet" href="order_style.css">
+			<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" >  
+	<link rel="stylesheet" href="forms.css">
+	<link rel="stylesheet" href="order_style.css">
+		<a href="home.html"><img src="back.png"></a>
+		<title>Order Checkout</title>
+		<header>Order Checkout</header>
+</head>
+<body>
+	<form action="success.html" name="item">
+		<div id="item">
+			<span>
+				<div id="name">
+					</div>
+				<div id="quantity">1. Cheese Pizza Slice(s)
+			    	<button class="plus-btn" type="button" id="up" name="button" onclick="up('12')">+</button>
+      				<input type="text" id="number" name="name" value="1">
+     				<button class="minus-btn" type="button" id="down" name="button" onclick="down('1')">-</button>
+     				<button class="delete-btn"><img src="trash.png" class="trash"></button>
+     			</div>
+     		</span>
+		</div>
+	<button type="submit" formaction="gompei.html">Continue Ordering</button>
+	<button type="submit">Checkout</button>
+
+</form>
+</body>
+</html>

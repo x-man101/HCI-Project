@@ -1,0 +1,57 @@
+label {
+  display: block;
+}
+
+input {
+  height: 25px;
+  font-size: 16px;
+  margin: 3px;
+  padding: 2px;
+  color: #AC2B37;
+
+}
+
+form {
+  padding: 15px;
+  margin: 1px;
+  border-width: 2px;
+  border-style: solid;
+
+} 
+
+.error {
+  background-color: LightYellow;
+  color: DarkRed;
+  width: 160px;
+  padding: 10px;
+  border: 1px solid gray;
+  position: absolute;
+  visibility: hidden;
+  left: 190px;
+  box-shadow: 3px 3px 3px #999999;
+  border-radius: 7px;
+}
+
+input[type='submit'] {
+  
+width: 75px; 
+height: 25px;
+margin: 3px;
+font-size: 16px;
+  
+border-image: url("greyButton.png") 0 14 0 14 stretch;
+} 
+
+input:required {
+  background-color: pink;
+}
+
+input:invalid {
+  background-color: red;
+ 
+}
+
+input:valid {
+  background-color: LightYellow;
+
+}
